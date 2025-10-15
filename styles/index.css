@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+:root {
+  --font-color: #37373c;
+  --primary-color: #eaebee;
+  --secondary-color: #321ba6;
+  --border-color: #e3e6e6ff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .logo h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--font-color);
+}
+
+header nav .logo .fa-calendar {
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+/* Tab Styles */
+
+header nav .tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--font-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-color);
+}
+
+.nav-link.active {
+  background-color: var(--primary-color);
+  font-weight: 500;
+}
+
+header nav .fa-bars {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+   header nav .fa-bars {
+    display: block;
+  }
+
+  header nav .tabs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: -160px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    z-index: 1000;
+    padding: 10px;
+    transition: right 0.3s ease-in-out;
+
+  }
+
+  header nav .tabs.show {
+    right: 0px;
+    transition: right 0.3s ease-in-out;
+  }
+
+ 
+
+  
+}

@@ -1,3 +1,14 @@
+// Render the Components Dynamically
+document.addEventListener("DOMContentLoaded", async () => {
+  const components = document.querySelectorAll("Component");
+  for (const comp of components) {
+    const src = comp.getAttribute("src");
+    const res = await fetch(src);
+    const html = await res.text();
+    comp.outerHTML = html;
+  }
+});
+
 // A function that handles the navigation tabs
 function NavTabs() {
   const allNavLinks = document.querySelectorAll(".nav-link");
@@ -27,12 +38,12 @@ const toggleNavBar = () => {
   toggleButton.addEventListener("click", () => {
     navBar.classList.toggle("show");
   });
-}
+};
 
 // Initialize the app
 function init() {
   NavTabs();
-    toggleNavBar();
+  toggleNavBar();
 }
 
 // When the DOM Is ready start the app
@@ -41,4 +52,3 @@ if (document.readyState === "loading") {
 } else {
   init();
 }
-

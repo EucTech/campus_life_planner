@@ -13,7 +13,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- my css files links -->
     <link rel="stylesheet" href="/styles/index.css" />
+
   </head>
   <body>
     <header>
@@ -38,26 +40,22 @@
 
     <!-- Dashboard Page -->
     <div id="dashboard" class="page active">
-      <h2>Dashboard</h2>
-      <p>Welcome to your dashboard!</p>
+      <Component src="/components/dashboard.html" />
     </div>
 
     <!-- Tasks Page -->
     <div id="tasks" class="page">
-      <h2>Tasks</h2>
-      <p>Here are your tasks for today:</p>
+      <Component src="/components/tasks.html" />
     </div>
 
     <!-- About Page -->
     <div id="about" class="page">
-      <h2>About</h2>
-      <p>This application helps you manage your campus life effectively.</p>
+      <Component src="/components/about.html" />
     </div>
 
     <!-- Settings Page -->
     <div id="settings" class="page">
-      <h2>Settings</h2>
-      <p>Adjust your preferences here.</p>
+      <Component src="/components/settings.html" />
     </div>
 
     <!-- script -->

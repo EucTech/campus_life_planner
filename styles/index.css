@@ -26,10 +26,10 @@ ul {
 /* Header Styles */
 header {
   width: 100%;
+  position: fixed;
   background-color: #fff;
   padding: 20px 40px;
   border-bottom: 1px solid var(--border-color);
-  overflow: hidden;
 }
 
 header nav {
@@ -65,6 +65,8 @@ header nav .tabs {
 
 .page {
   display: none;
+  padding: 100px 40px;
+  z-index: 1000;
 }
 
 .page.active {
@@ -96,6 +98,13 @@ header nav .fa-bars {
 
 
 @media (max-width: 600px) {
+
+  header {
+    padding: 30px 20px;
+    /* position: relative; */
+    z-index: 2000;
+  }
+
    header nav .fa-bars {
     display: block;
   }
@@ -104,12 +113,11 @@ header nav .fa-bars {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 65px;
+    top: 100%;
     right: -160px;
     background-color: #fff;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    z-index: 1000;
     padding: 10px;
     transition: right 0.3s ease-in-out;
 
@@ -120,7 +128,11 @@ header nav .fa-bars {
     transition: right 0.3s ease-in-out;
   }
 
- 
+}
 
-  
+
+@media (max-width: 600px) {
+  .page {
+    padding: 100px 20px;
+  }
 }

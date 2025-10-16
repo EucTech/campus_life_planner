@@ -5,7 +5,7 @@ import { startDataManagement } from "./settings.js";
 document.addEventListener("DOMContentLoaded", async () => {
   
   // Load all components first
-  const components = document.querySelectorAll("Component");
+  const components = document.querySelectorAll("component");
   for (const comp of components) {
     const src = comp.getAttribute("src");
     const res = await fetch(src);

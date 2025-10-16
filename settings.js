@@ -1,4 +1,4 @@
-import { displayTasksEvents, loadDashboardStats } from "../ui/dashboard.js";
+import { displayTasksEvents, loadDashboardStats } from "./ui/dashboard.js";
 import { getAllTasks } from "./storage.js";
 
 export function startDataManagement() {

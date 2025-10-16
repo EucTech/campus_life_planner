@@ -5,7 +5,7 @@
       "title": "Attend Frontend Class",
       "date": "2025-10-17",
       "time": "10:00 AM",
-      "duration": "2 hours",
+      "duration": "120 mins",
       "tag": "Class",
       "status": "Completed"
     },
@@ -14,7 +14,7 @@
       "title": "AI and Machine Learning Club",
       "date": "2025-10-18",
       "time": "3:00 PM",
-      "duration": "1 hour",
+      "duration": "60 mins",
       "tag": "Club",
       "status": "Completed"
     },
@@ -23,7 +23,7 @@
       "title": "Leadership Seminar",
       "date": "2025-10-19",
       "time": "5:00 PM",
-      "duration": "1.5 hours",
+      "duration": "60 mins",
       "tag": "Seminar",
       "status": "Urgent"
     },
@@ -32,7 +32,7 @@
       "title": "Study for Formatives Exam",
       "date": "2025-10-20",
       "time": "6:00 PM",
-      "duration": "3 hours",
+      "duration": "180 mins",
       "tag": "Study",
       "status": "Urgent"
     },
@@ -41,7 +41,7 @@
       "title": "ALU Run Club",
       "date": "2025-10-21",
       "time": "7:00 AM",
-      "duration": "2 hours",
+      "duration": "120 mins",
       "tag": "Club",
       "status": "Upcoming"
     },
@@ -50,7 +50,7 @@
       "title": "Group Project Meeting",
       "date": "2025-10-22",
       "time": "4:00 PM",
-      "duration": "2 hours",
+      "duration": "60 mins",
       "tag": "Meeting",
       "status": "Upcoming"
     },
@@ -59,7 +59,7 @@
       "title": "Responsive Web Design Workshop",
       "date": "2025-10-23",
       "time": "1:00 PM",
-      "duration": "2 hours",
+      "duration": "120 mins",
       "tag": "Workshop",
       "status": "Upcoming"
     },
@@ -68,7 +68,7 @@
       "title": "Prepare for AI Hackathon",
       "date": "2025-10-24",
       "time": "2:00 PM",
-      "duration": "3 hours",
+      "duration": "120 mins",
       "tag": "Hackathon",
       "status": "Due Soon"
     },
@@ -77,7 +77,7 @@
       "title": "Weekly Team Sync",
       "date": "2025-10-25",
       "time": "11:00 AM",
-      "duration": "1 hour",
+      "duration": "60 mins",
       "tag": "Meeting",
       "status": "Upcoming"
     },
@@ -86,7 +86,7 @@
       "title": "Networking Event",
       "date": "2025-10-26",
       "time": "6:00 PM",
-      "duration": "2 hours",
+      "duration": "120 mins",
       "tag": "Event",
       "status": "Upcoming"
     },
@@ -95,7 +95,7 @@
       "title": "Web Server Class",
       "date": "2025-10-27",
       "time": "3:00 PM",
-      "duration": "1.5 hours",
+      "duration": "90 mins",
       "tag": "Class",
       "status": "Upcoming"
     },
@@ -104,7 +104,7 @@
       "title": "Tech Talk: Future of AI",
       "date": "2025-10-28",
       "time": "5:00 PM",
-      "duration": "1 hour",
+      "duration": "60 mins",
       "tag": "Seminar",
       "status": "Upcoming"
     }

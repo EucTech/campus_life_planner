@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%; 
+html,
+body {
+  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@ body {
 }
 
 main {
-  flex: 1; 
+  flex: 1;
 }
 
 :root {
@@ -30,6 +31,10 @@ main {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Header Styles */
@@ -74,7 +79,7 @@ header nav .tabs {
 
 .page {
   display: none;
-  padding: 100px 40px;
+  padding: 100px 40px 40px 40px;
   z-index: 1000;
 }
 
@@ -105,15 +110,13 @@ header nav .fa-bars {
   display: none;
 }
 
-
 @media (max-width: 600px) {
-
   header {
     padding: 30px 20px;
     z-index: 2000;
   }
 
-   header nav .fa-bars {
+  header nav .fa-bars {
     display: block;
   }
 
@@ -128,20 +131,17 @@ header nav .fa-bars {
     border-radius: 4px;
     padding: 10px;
     transition: right 0.3s ease-in-out;
-
   }
 
   header nav .tabs.show {
     right: 0px;
     transition: right 0.3s ease-in-out;
   }
-
 }
-
 
 @media (max-width: 600px) {
   .page {
-    padding: 100px 20px;
+    padding: 100px 20px 40px 20px;
   }
 }
 
@@ -151,7 +151,6 @@ footer {
   padding: 20px 40px;
   text-align: center;
   border-top: 1px solid var(--border-color);
-  
 }
 
 footer p {

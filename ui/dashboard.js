@@ -1,10 +1,10 @@
-import { getAllTasks, saveTasksEvents } from "../storage.js";
+import { getAllTasks, saveTasksEvents } from "../scripts/storage.js";
 import {
   checkTitleValidity,
   checkNumberValidity,
   checkDateValidity,
   checkTagValidity,
-} from "../validation.js";
+} from "../scripts/validation.js";
 
 
 let taskToDeleteId = null;

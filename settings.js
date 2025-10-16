@@ -1,5 +1,5 @@
 import { displayTasksEvents, loadDashboardStats } from "./ui/dashboard.js";
-import { getAllTasks } from "./storage.js";
+import { getAllTasks } from "./scripts/storage.js";
 
 export function startDataManagement() {
     // Export data to a JSON file

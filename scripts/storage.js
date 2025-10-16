@@ -1,7 +1,7 @@
 // save tasks and events to localStorage from seed.json
 export async function saveTasksEvents() {
   try {
-    const response = await fetch("seed.json");
+    const response = await fetch("../seed.json");
     const data = await response.json();
 
     // Save tasks and events to localStorage

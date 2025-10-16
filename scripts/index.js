@@ -1,4 +1,4 @@
-import { init } from "/ui/dashboard.js";
+import { init } from "../ui/dashboard.js";
 import { startDataManagement } from "./settings.js";
 
 // This will render the Components Dynamically

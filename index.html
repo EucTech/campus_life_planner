@@ -16,47 +16,56 @@
     <!-- my css files links -->
     <link rel="stylesheet" href="/styles/index.css" />
 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+    </style>
   </head>
   <body>
     <header>
       <nav>
-      <!-- logo -->
-      <div class="logo">
-        <i class="fa-solid fa-calendar"></i>
-        <h1>CLP</h1>
-      </div>
+        <!-- logo -->
+        <div class="logo">
+          <i class="fa-solid fa-calendar"></i>
+          <h1>CLP</h1>
+        </div>
 
-      <!-- Large Screen Tabs -->
-      <ul class="tabs">
-        <li class="nav-link active" data-page="dashboard">Dashboard</li>
-        <li class="nav-link" data-page="tasks">Tasks</li>
-        <li class="nav-link" data-page="about">About</li>
-        <li class="nav-link" data-page="settings">Settings</li>
-      </ul>
+        <!-- Large Screen Tabs -->
+        <ul class="tabs">
+          <li class="nav-link active" data-page="dashboard">Dashboard</li>
+          <li class="nav-link" data-page="tasks">Tasks</li>
+          <li class="nav-link" data-page="about">About</li>
+          <li class="nav-link" data-page="settings">Settings</li>
+        </ul>
 
-      <i class="fa-solid fa-bars"></i>
-    </nav>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
     </header>
 
-    <!-- Dashboard Page -->
-    <div id="dashboard" class="page active">
-      <Component src="/components/dashboard.html" />
-    </div>
+    <main>
+      <!-- Dashboard Page -->
+      <section id="dashboard" class="page active">
+        <Component src="/components/dashboard.html" />
+      </section>
 
-    <!-- Tasks Page -->
-    <div id="tasks" class="page">
-      <Component src="/components/tasks.html" />
-    </div>
+      <!-- Tasks Page -->
+      <section id="tasks" class="page">
+        <Component src="/components/tasks.html" />
+      </section>
 
-    <!-- About Page -->
-    <div id="about" class="page">
-      <Component src="/components/about.html" />
-    </div>
+      <!-- About Page -->
+      <section id="about" class="page">
+        <Component src="/components/about.html" />
+      </section>
 
-    <!-- Settings Page -->
-    <div id="settings" class="page">
-      <Component src="/components/settings.html" />
-    </div>
+      <!-- Settings Page -->
+      <section id="settings" class="page">
+        <Component src="/components/settings.html" />
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Campus Life Planner. All rights reserved.</p>
+    </footer>
 
     <!-- script -->
     <script src="/scripts/index.js"></script>

@@ -1,0 +1,100 @@
+{
+  "tasks": [
+    {
+      "id": "task_000001",
+      "title": "Attend Frontend Class",
+      "date": "2025-10-17",
+      "time": "10:00 AM",
+      "duration": "2 hours",
+      "tag": "Class"
+    },
+    {
+      "id": "task_000002",
+      "title": "AI and Machine Learning Club",
+      "date": "2025-10-18",
+      "time": "3:00 PM",
+      "duration": "1 hour",
+      "tag": "Club"
+    },
+    {
+      "id": "task_000003",
+      "title": "Leadership Seminar",
+      "date": "2025-10-19",
+      "time": "5:00 PM",
+      "duration": "1.5 hours",
+      "tag": "Seminar"
+    },
+    {
+      "id": "task_000004",
+      "title": "Study for Formatives Exam",
+      "date": "2025-10-20",
+      "time": "6:00 PM",
+      "duration": "3 hours",
+      "tag": "Study"
+    },
+    {
+      "id": "task_000005",
+      "title": "ALU Run Club",
+      "date": "2025-10-21",
+      "time": "7:00 AM",
+      "duration": "2 hour",
+      "tag": "Club"
+    },
+    {
+      "id": "task_000006",
+      "title": "Group Project Meeting",
+      "date": "2025-10-22",
+      "time": "4:00 PM",
+      "duration": "2 hours",
+      "tag": "Meeting"
+    },
+    {
+      "id": "task_000007",
+      "title": "Responsive Web Design Workshop",
+      "date": "2025-10-23",
+      "time": "1:00 PM",
+      "duration": "2 hours",
+      "tag": "Workshop"
+    },
+    {
+      "id": "task_000008",
+      "title": "Prepare for AI Hackathon",
+      "date": "2025-10-24",
+      "time": "2:00 PM",
+      "duration": "3 hours",
+      "tag": "Hackathon"
+    },
+    {
+      "id": "task_000009",
+      "title": "Weekly Team Sync",
+      "date": "2025-10-25",
+      "time": "11:00 AM",
+      "duration": "1 hour",
+      "tag": "Meeting"
+    },
+    {
+      "id": "task_000010",
+      "title": "Networking Event",
+      "date": "2025-10-26",
+      "time": "6:00 PM",
+      "duration": "2 hours",
+      "tag": "Event"
+    },
+    {
+      "id": "task_000011",
+      "title": "Web Server Class",
+      "date": "2025-10-27",
+      "time": "3:00 PM",
+      "duration": "1.5 hours",
+      "tag": "Class"
+    },
+    {
+      "id": "task_000012",
+      "title": "Tech Talk: Future of AI",
+      "date": "2025-10-28",
+      "time": "5:00 PM",
+      "duration": "1 hour",
+      "tag": "Seminar"
+    }
+  ]
+}

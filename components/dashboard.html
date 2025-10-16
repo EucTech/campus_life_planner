@@ -31,13 +31,65 @@
       </button>
     </div>
 
+    <!-- Add Task and Event Modal -->
+<div id="addTaskModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+        <!-- Will use DOM to change the title to Edit -->
+      <h2 id="modalTitle">Add New Task or Event</h2>
+      <button class="modal-close" id="closeAddModal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <form id="addTaskForm">
+      <label>Title <span class="star">*</span></label>
+      <input type="text" id="taskTitle" required placeholder="Enter task title" />
+
+      <label>Due Date (YYYY-MM-DD) <span class="star">*</span></label>
+      <input type="date" id="taskDate" required />
+
+      <label>Duration (minutes) <span class="star">*</span></label>
+      <input type="number" id="taskDuration" required min="1" value="60" />
+
+      <label>Tag <span class="star">*</span></label>
+      <select id="taskTag" required>
+        <option value="Assignment">Assignment</option>
+        <option value="Study">Study</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Meeting">Meeting</option>
+        <option value="Class">Class</option>
+        <option value="Event">Event</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Hackathon">Hackathon</option>
+        <option value="Club">Club</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Status <span class="star">*</span></label>
+      <select id="taskStatus" required>
+        <option value="On Track">On Track</option>
+        <option value="Upcoming">Upcoming</option>
+        <option value="Urgent">Urgent</option>
+        <option value="Completed">Completed</option>
+      </select>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" id="submitTaskBtn">Add Task</button>
+        <button type="button" class="btn btn-outline" id="cancelAddTask">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
     <!-- Dashboard Stats -->
     <div class="stats-grid" id="statsGrid">
-      <!-- Stats will be inserted here by JavaScript -->
+      <!-- Display Stats Card -->
     </div>
 
     <!-- Tasks -->
-
     <div class="tasks-section">
       <div>
         <input
@@ -50,41 +102,30 @@
       </div>
 
       <div class="tasks-container">
-        <h4>View All Tasks</h4>
+        <h4>View All Tasks and Events</h4>
 
         <div class="task-list" id="taskList">
-          <!-- Tasks will be inserted here by JavaScript -->
-           <div class="task-card">
-                <div class="task-card-title-icon">
-                    <h5>Task Title</h5>
-                    <div>
-                        <i class="fa-solid fa-pen-to-square"></i>
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-
-                <div class="task-card-time-tag">
-                    <span class="task-time"> 
-                        <i class="fa-regular fa-clock"></i>
-                        <p>75 mins</p>
-                    </span>
-                    <span class="task-tag">Meeting</span>
-                </div>
-
-                <div class="task-card-date-duration">
-                    <span class="task-date"> 
-                        <i class="fa-regular fa-calendar"></i>
-                        <p>2025-10-20</p>
-                    </span>
-                    <span class="task-duration">Due with 3 days</span>
-                </div>
-
-           </div>           
+          <!-- I will list all tasks and events here -->
         </div>
       </div>
     </div>
 
-    <script src="/scripts/index.js"></script>
-    <script src="/ui/dashboard.js"></script>
+      <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal modal-container" role="alertdialog" aria-labelledby="deleteTitle" aria-modal="true">
+        <div class="modal-content modal-small">
+            <h2 id="deleteTitle">Delete Task</h2>
+            <!-- <p>Are you sure you want to delete this task? This action cannot be undone.</p> -->
+             <p></p>
+            <div class="modal-footer">
+                <button id="confirmDelete" class="btn btn-danger" data-testid="button-confirm-delete">Delete</button>
+                <button id="cancelDelete" class="btn btn-outline" data-testid="button-cancel-delete">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="/scripts/index.js"></script>
+    <script type="module" src="/ui/dashboard.js"></script>
+    <script type="module" src="/scripts/storage.js"></script>
   </body>
 </html>

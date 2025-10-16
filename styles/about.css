@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.about-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-header h2 {
+    font-size: 24px;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.about-header p {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.purpose {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 20px;
+    /* margin-right: auto; */
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.purpose h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.purpose p {
+    font-size: 14px;;
+    font-weight: 400;
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.features-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+.features-card i {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.features-card h4 {
+    font-size: 18px;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.features-card p {
+    font-size: 13px;
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.contact h3 {
+    font-size: 20px;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.contact p {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: left;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.contact-btn .btn {
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--font-color);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 600px) {
+    .purpose {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 300px) {
+    .contact-btn {
+        flex-direction: column;
+        align-items: start;
+    }
+}

@@ -1,0 +1,94 @@
+
+
+
+
+
+.settings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.settings h3 {
+    font-size: 20px;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.settings p {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: left;
+}
+
+.settings-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.settings-header h2 {
+    font-size: 24px;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.settings-header p {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+
+.settings-btn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.settings-btn .btn {
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--font-color);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.settings-btn .btn:hover {
+    opacity: 0.8;
+}
+
+#deleteBtn {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#deleteBtn p {
+    color: white;
+}
+
+
+
+@media (max-width: 300px) {
+    .settings-btn {
+        flex-direction: column;
+        align-items: start;
+    }
+}

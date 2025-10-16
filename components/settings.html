@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/styles/settings.css">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/settings.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
     <title>Settings</title>
-</head>
-<body>
-    <h2>Settings</h2>
-    <p>Adjust your preferences here.</p>
-</body>
+  </head>
+  <body>
+    <div>
+      <div class="settings-header">
+        <h2>Settings</h2>
+        <p>Manage your application settings and preferences here.</p>
+      </div>
+
+      <div class="settings">
+        <h3>Data Management</h3>
+        <p>Export, import, and delete your data.</p>
+
+        <div class="settings-btn">
+          
+          <button class="btn export-btn" id="exportBtn">
+            <i class="fa-solid fa-download"></i>
+            <p>Export</p>
+          </button>
+          <button class="btn import-btn" id="importBtn">
+            <i class="fa-solid fa-upload"></i>
+            <p>Import</p>
+          </button>
+          <button class="btn delete-btn" id="deleteBtn">
+            <i class="fa-solid fa-trash"></i>
+            <p>Delete All Data</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

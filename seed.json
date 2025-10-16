@@ -6,7 +6,8 @@
       "date": "2025-10-17",
       "time": "10:00 AM",
       "duration": "2 hours",
-      "tag": "Class"
+      "tag": "Class",
+      "status": "Completed"
     },
     {
       "id": "task_000002",
@@ -14,7 +15,8 @@
       "date": "2025-10-18",
       "time": "3:00 PM",
       "duration": "1 hour",
-      "tag": "Club"
+      "tag": "Club",
+      "status": "Completed"
     },
     {
       "id": "task_000003",
@@ -22,7 +24,8 @@
       "date": "2025-10-19",
       "time": "5:00 PM",
       "duration": "1.5 hours",
-      "tag": "Seminar"
+      "tag": "Seminar",
+      "status": "Urgent"
     },
     {
       "id": "task_000004",
@@ -30,15 +33,17 @@
       "date": "2025-10-20",
       "time": "6:00 PM",
       "duration": "3 hours",
-      "tag": "Study"
+      "tag": "Study",
+      "status": "Urgent"
     },
     {
       "id": "task_000005",
       "title": "ALU Run Club",
       "date": "2025-10-21",
       "time": "7:00 AM",
-      "duration": "2 hour",
-      "tag": "Club"
+      "duration": "2 hours",
+      "tag": "Club",
+      "status": "Upcoming"
     },
     {
       "id": "task_000006",
@@ -46,7 +51,8 @@
       "date": "2025-10-22",
       "time": "4:00 PM",
       "duration": "2 hours",
-      "tag": "Meeting"
+      "tag": "Meeting",
+      "status": "Upcoming"
     },
     {
       "id": "task_000007",
@@ -54,7 +60,8 @@
       "date": "2025-10-23",
       "time": "1:00 PM",
       "duration": "2 hours",
-      "tag": "Workshop"
+      "tag": "Workshop",
+      "status": "Upcoming"
     },
     {
       "id": "task_000008",
@@ -62,7 +69,8 @@
       "date": "2025-10-24",
       "time": "2:00 PM",
       "duration": "3 hours",
-      "tag": "Hackathon"
+      "tag": "Hackathon",
+      "status": "Due Soon"
     },
     {
       "id": "task_000009",
@@ -70,7 +78,8 @@
       "date": "2025-10-25",
       "time": "11:00 AM",
       "duration": "1 hour",
-      "tag": "Meeting"
+      "tag": "Meeting",
+      "status": "Upcoming"
     },
     {
       "id": "task_000010",
@@ -78,7 +87,8 @@
       "date": "2025-10-26",
       "time": "6:00 PM",
       "duration": "2 hours",
-      "tag": "Event"
+      "tag": "Event",
+      "status": "Upcoming"
     },
     {
       "id": "task_000011",
@@ -86,7 +96,8 @@
       "date": "2025-10-27",
       "time": "3:00 PM",
       "duration": "1.5 hours",
-      "tag": "Class"
+      "tag": "Class",
+      "status": "Upcoming"
     },
     {
       "id": "task_000012",
@@ -94,7 +105,8 @@
       "date": "2025-10-28",
       "time": "5:00 PM",
       "duration": "1 hour",
-      "tag": "Seminar"
+      "tag": "Seminar",
+      "status": "Upcoming"
     }
   ]
 }

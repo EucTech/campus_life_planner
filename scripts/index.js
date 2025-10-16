@@ -1,4 +1,5 @@
 import { init } from "/ui/dashboard.js";
+import { startDataManagement } from "./settings.js";
 
 // This will render the Components Dynamically
 document.addEventListener("DOMContentLoaded", async () => {
@@ -12,9 +13,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     comp.outerHTML = html;
   }
 
-  // Wait a short time to make sure the DOM is done loading
+
   setTimeout(initIndex, 100);
+
+  // Initialize the dashboard
   init();
+
+  // Initialize data management (import/export/delete)
+  startDataManagement();
 });
 
 // A function that handles the navigation tabs

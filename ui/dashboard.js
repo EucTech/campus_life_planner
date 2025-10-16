@@ -11,7 +11,7 @@ let taskToDeleteId = null;
 let taskToEditId = null;
 
 // dashboard stats
-async function loadDashboardStats() {
+export async function loadDashboardStats() {
   try {
     const tasks = getAllTasks();
     if (tasks.length === 0)
@@ -88,7 +88,7 @@ async function loadDashboardStats() {
 }
 
 // Render tasks in the tasks page
-function displayTasksEvents(tasksToRender = null) {
+export function displayTasksEvents(tasksToRender = null) {
   const tasks = tasksToRender || getAllTasks();
   const taskList = document.getElementById("taskList");
 

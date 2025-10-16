@@ -2,8 +2,6 @@ import { displayTasksEvents, loadDashboardStats } from "../ui/dashboard.js";
 import { getAllTasks } from "./storage.js";
 
 export function startDataManagement() {
-
-
     // Export data to a JSON file
   const exportBtn = document.getElementById("exportBtn");
   exportBtn?.addEventListener("click", () => {

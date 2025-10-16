@@ -14,11 +14,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
 
-  setTimeout(initIndex, 100);
-
+  initIndex();
   // Initialize the dashboard
   init();
-
   // Initialize data management (import/export/delete)
   startDataManagement();
 });

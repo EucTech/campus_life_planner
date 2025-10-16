@@ -9,7 +9,6 @@
     <title>Dashboard</title>
   </head>
   <body>
-    
     <div class="dashboard">
       <div class="dashboard-header">
         <h2>Dashboard</h2>
@@ -35,20 +34,57 @@
     <!-- Dashboard Stats -->
     <div class="stats-grid" id="statsGrid">
       <!-- Stats will be inserted here by JavaScript -->
-      
     </div>
 
     <!-- Tasks -->
 
     <div class="tasks-section">
       <div>
-        <input type="text" name="" id="">
+        <input
+          class="search-input"
+          type="text"
+          name=""
+          id="searchInput"
+          placeholder="Search tasks..."
+        />
       </div>
 
+      <div class="tasks-container">
+        <h4>View All Tasks</h4>
+
+        <div class="task-list" id="taskList">
+          <!-- Tasks will be inserted here by JavaScript -->
+           <div class="task-card">
+                <div class="task-card-title-icon">
+                    <h5>Task Title</h5>
+                    <div>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+
+                <div class="task-card-time-tag">
+                    <span class="task-time"> 
+                        <i class="fa-regular fa-clock"></i>
+                        <p>75 mins</p>
+                    </span>
+                    <span class="task-tag">Meeting</span>
+                </div>
+
+                <div class="task-card-date-duration">
+                    <span class="task-date"> 
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>2025-10-20</p>
+                    </span>
+                    <span class="task-duration">Due with 3 days</span>
+                </div>
+
+           </div>           
+        </div>
+      </div>
     </div>
 
     <script src="/scripts/index.js"></script>
     <script src="/ui/dashboard.js"></script>
-
   </body>
 </html>
